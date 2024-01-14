@@ -27,24 +27,44 @@ header p {
     margin-bottom: 20px;
 }
 
+.boxluaspersegi {
+    background-color: white;
+    border: solid #7FC7D9;
+    border-radius: 50px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 800px;
+    height: 150px;
+    margin: auto;
+}
+
+.boxluaspersegi:hover {
+    background-color: rgb(192, 227, 248);
+}
+
 .inputSection {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
     margin-left: 200px;
     margin-right: 200px;
-    
+    margin-bottom: 10px;
 }
-
+#lblsquareside {
+    margin: auto;
+}
 #squareside {
+    font-size: medium;
     margin-top: 10px;
     outline: none;
     border-radius: 10px;
-    border: solid #DCF2F1;
+    border: solid #7FC7D9;
     padding: 10px;
+    background-color: #DCF2F1;
 }
 
 #squareside:focus {
-    border: solid #7FC7D9;
+    border: solid #365486;
 }
 
 button {
@@ -66,9 +86,15 @@ button:active {
 }
 
 #hitungbutton {
-    margin-left: 200px;
+    margin-left: 355px;
 }
-
-#resetbutton {
-    margin-right: 200px;
+#hitungbutton.reset {
+    background-color: red;
+    color: white;
+}
+#hitungbutton.reset:hover {
+    background-color: rgb(204, 4, 4);
+}
+#hitungbutton.reset:active {
+    background-color: rgb(151, 1, 1);
 }

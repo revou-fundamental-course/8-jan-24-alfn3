@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
         <title>catic</title>
     </head>
     <body>
@@ -12,13 +13,14 @@
             <h4>wellcome to catic | calkulator matematic</h4>
             <p>ini adalah web yang bisa digunakan untuk menghitung luas persegi dan persegi panjang untuk mini projek RevoU</p> 
         </header>
+        <div class="boxluaspersegi">
         <div class="inputSection">
-            <label for="squareside" id="lblsquareside" >Hitung luas persegi</label>
+            <label for="squareside" id="lblsquareside" >HITUNG LUAS PERSEGI</label>
             <input type="number" id="squareside">
         </div>
         <div class="button">
-            <button id="hitungbutton">hitung</button>
-            <button id="resetbutton">reset</button>
+            <button id="hitungbutton" onclick="hitungbutton()">hitung</button>  
+        </div>
         </div>
     </body>
 </html>
