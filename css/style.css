@@ -98,3 +98,9 @@ button:active {
 #hitungbutton.reset:active {
     background-color: rgb(151, 1, 1);
 }
+
+.button2 {
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+}
