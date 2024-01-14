@@ -42,18 +42,18 @@ header p {
     background-color: rgb(192, 227, 248);
 }
 
-.inputSection {
-    display: flex;
-    flex-direction: column;
+#lblsquareside {
+    display: grid;
+    place-items: center;
     margin-top: 10px;
-    margin-left: 200px;
-    margin-right: 200px;
+}
+
+.inputSection {
+    margin-left: 160px;
     margin-bottom: 10px;
 }
-#lblsquareside {
-    margin: auto;
-}
-#squareside {
+
+.squareside {
     font-size: medium;
     margin-top: 10px;
     outline: none;
@@ -63,8 +63,11 @@ header p {
     background-color: #DCF2F1;
 }
 
-#squareside:focus {
+.squareside:focus {
     border: solid #365486;
+}
+.squareside::placeholder {
+    text-align: center;
 }
 
 button {
@@ -104,3 +107,6 @@ button:active {
     display: grid;
     place-items: center;
 }
+canvas {
+    margin-left: 565px;
+  }

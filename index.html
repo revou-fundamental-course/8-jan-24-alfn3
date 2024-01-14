@@ -14,16 +14,17 @@
             <p>ini adalah web yang bisa digunakan untuk menghitung luas persegi dan persegi panjang untuk mini projek RevoU</p> 
         </header>
         <div class="boxluaspersegi">
-        <div class="inputSection">
             <label for="squareside" id="lblsquareside" >HITUNG LUAS PERSEGI</label>
-            <input type="number" id="squareside">
+        <div class="inputSection">
+            <input type="number" class="squareside" placeholder="masukan panjang">
+            <input type="number" class="squareside" placeholder="masukan lebar">
         </div>
         <div class="button">
             <button id="hitungbutton" onclick="hitungbutton()">hitung</button>  
         </div>
         </div>
-        <div class="button2">
-            <button id="swap" > > luas persegi panjang</button>
-        </div>
+        <p id="hasilLuas"></p>
+
+        <canvas id="myCanvas" width="200" height="200"></canvas>
     </body>
 </html>
