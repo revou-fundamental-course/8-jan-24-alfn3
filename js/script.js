@@ -15,16 +15,13 @@ function hitungbutton() {
     var panjang = document.getElementsByClassName("squareside")[0].value;
     var lebar = document.getElementsByClassName("squareside")[1].value;
     if (panjang === "" || lebar === "") {
-    // Tampilkan pesan menggunakan SweetAlert2
     var error = document.getElementById("error");
     error.style.display = "block";
     var squareside = document.getElementsByClassName("squareside");
     for (var i = 0; i < squareside.length; i++) {
       squareside[i].style.display = "none";
     }
-
     } else {
-    // Gambar persegi panjang di canvas
     panjang = parseFloat(panjang);
     lebar = parseFloat(lebar);
     var luas = panjang * lebar;
@@ -35,14 +32,12 @@ function hitungbutton() {
     for (var i = 0; i < squareside.length; i++) {
       squareside[i].style.display = "none";
     }
-    // Bersihkan canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Gambar persegi panjang
-    ctx.fillStyle = "#3498db";  // Warna persegi panjang
+    ctx.fillStyle = "#3498db";  
     ctx.fillRect(10, 10, 100, 100);
 
-    ctx.fillStyle = "#000";  // Warna teks
+    ctx.fillStyle = "#000";  
     ctx.font = "14px Arial";
     ctx.fillText("P x L", 45, 60 / 1);
     ctx.fillText(panjang + " cm", 10, 130 / 1, 100);
