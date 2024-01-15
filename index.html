@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <title>catic</title>
     </head>
     <body>
@@ -15,6 +16,9 @@
         </header>
         <div class="boxluaspersegi">
             <label for="squareside" id="lblsquareside" >HITUNG LUAS PERSEGI</label>
+            <p id="hasilLuas"></p>
+
+            <canvas id="myCanvas" width="200" height="200"></canvas>
         <div class="inputSection">
             <input type="number" class="squareside" placeholder="masukan panjang">
             <input type="number" class="squareside" placeholder="masukan lebar">
@@ -23,8 +27,5 @@
             <button id="hitungbutton" onclick="hitungbutton()">hitung</button>  
         </div>
         </div>
-        <p id="hasilLuas"></p>
-
-        <canvas id="myCanvas" width="200" height="200"></canvas>
     </body>
 </html>
